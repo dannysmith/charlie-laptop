@@ -1,0 +1,89 @@
+homebrew_packages:
+  - openssl
+  - coreutils
+  - md5sha1sum
+  - ctags
+  - libxml2
+  - libpng
+  - freetype
+  - ffmpeg
+  - readline
+  - git
+  - ant
+  - ack
+  - vim
+  - httpie
+  - curl
+  - p7zip
+  - grep
+  - tree
+  - heroku
+  - hub
+  - imagemagick
+  - libyaml
+  - nvm
+  - ruby-build
+  - rbenv
+  - rbenv-default-gems
+  - yarn
+  - postgresql
+  - redis
+  - sqlite
+dotfiles:
+  - bash_profile
+  - gemrc
+gui_applications:
+  root:
+    - Postman.app
+    - Slack.app
+    - Github Desktop.app
+    - VirtualBox.app
+    - Firefox.app
+    - Google Chrome.app
+    - Atom.app
+    - Macdown.app
+    - Visual Studio Code.app
+  user:
+quicklook_plugins:
+  root:
+  user:
+    - QLMarkdown
+    - QuickLookJSON
+empty_directories:
+  - ~/Downloads
+  - ~/Documents
+  - ~/Desktop
+defaults:
+  NSGlobalDomain:
+    ApplePressAndHoldEnabled: 0
+    KeyRepeat: 0
+    AppleKeyboardUIMode: 3
+    NSAutomaticSpellingCorrectionEnabled: 0
+    com.apple.springing.enabled: 1
+    com.apple.springing.delay: 0
+    WebKitDeveloperExtras: 1
+  com.apple.Safari:
+    HomePage: about:blank
+  com.apple.terminal:
+    StringEncodings: 4
+  com.apple.screencapture:
+    location: ~/Desktop
+    type: png
+  com.apple.dock:
+    tilesize: 36
+    mineffect: "scale"
+    launchanim: 1
+    autohide-delay: 0
+  com.apple.Safari:
+    com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled: 1
+    ProxiesInBookmarksBar: ()
+    IncludeInternalDebugMenu: 1
+  com.apple.mail:
+    AddressesIncludeNameOnPasteboard: 0
+  com.apple.alf:
+    globalstate: 1
+  com.apple.screensaver:
+    idleTime: 240
+    askForPassword: 1
+    askForPasswordDelay: 0
+

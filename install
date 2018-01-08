@@ -1,0 +1,42 @@
+#!/bin/sh
+
+# Sparta Global laptop reset script!
+
+echo "Welcome to the CharlieHR Laptop Installer"
+echo "-----------------------------------------"
+echo
+
+# Set current directory, so we can change back to it in the scripts.
+export LAPTOP_INSTALL_DIR=$(pwd)
+
+# Run individual iinstall scripts
+source config.sh
+source homebrew.sh
+source ruby.sh
+source dotfiles.sh
+source node.sh
+source macos.sh
+
+# Run tests
+source tests.sh
+
+echo
+green_echo "---------------------- Setup Finished! ----------------------"
+green_echo "💃                🍺  Done provisioning laptop! 🍺            💃"
+green_echo "-------------------------------------------------------------"
+echo
+
+sleep 5
+
+fancy_echo "Don't forget to check the output of the unit tests."
+input_echo "Do you want to restart the machine now? (type 'yes'): "
+read restart_confirmed
+
+if ! [ "$restart_confirmed" = "yes" ]
+then
+  fancy_echo "All done!"
+  exit 0
+else
+  fancy_echo "Restarting..."
+  sudo shutdown -r now "Restarting machine"
+fi
