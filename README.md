@@ -9,23 +9,17 @@ First off, you should check basic some security settings...
 1. Make sure you've set a strong basic password.
 2. Turn on Touch ID if your laptop supports it.
 
-Next, enable filevault and restart your machine
+Next, turn on FileVault and restart your laptop
 
 ```shell
 sudo fdesetup enable
+sudo shutdown -r now
 ```
 
 Once you've rebooted, install the OSX command line tools and update the system
 
 ```shell
 sudo softwareupdate -i -a; xcode-select --install
-```
-
-Next, turn on FileVault and restart your laptop
-
-```shell
-sudo fdesetup enable
-sudo shutdown -r now
 ```
 
 Now run the installation script
