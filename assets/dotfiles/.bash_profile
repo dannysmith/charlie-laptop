@@ -15,10 +15,6 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 # Enable shims and autocompletion for rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-
-# Ask for confirmation when running rm
-alias rm='rm -i'
-
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
 
