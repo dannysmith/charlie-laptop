@@ -1,7 +1,5 @@
 #!/bin/sh
 
-# Sparta Global laptop reset script!
-
 echo "Welcome to the CharlieHR Laptop Installer"
 echo "-----------------------------------------"
 echo
