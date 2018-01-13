@@ -25,7 +25,7 @@ sudo softwareupdate -i -a; xcode-select --install
 Now run the installation script
 
 ```shell
-git clone https://github.com/spartaglobal/laptop.git $HOME/laptop
+git clone https://github.com/CharlieHR/laptop.git $HOME/laptop
 cd $HOME/laptop
 chmod +x $HOME/laptop/install
 $HOME/laptop/install
