@@ -31,13 +31,13 @@ chmod +x $HOME/laptop/install
 $HOME/laptop/install
 ```
 
-The script will tae a while to run. Once you have checked the output to ensure everything has been installed corrctly, type `yes` to restart your machine.
+The script will take a while to run. Once you have checked the output to ensure everything has been installed correctly, type `yes` to restart your machine.
 
 #### After the restart
 
-Ensure you have been added to the CharlieHR GitHub organization and the *Contibutors* team.
+Ensure you have been added to the CharlieHR GitHub organization and the *Contibutors* team. Turn on 2FA for GitHub.
 
-Set your Github credentials
+Set your git credentials
 
 ```shell
 git config --global user.name "Your Name"
@@ -78,7 +78,7 @@ git clone git@github.com:CharlieHR/charliehr-resources.git ~/dev/charliehr-resou
 git clone git@github.com:CharlieHR/charliehr-blog.git ~/dev/charliehr-blog
 ```
 
-Finally, ensure you've been added to the Charlie Heroku organization and login to heroku with:
+Finally, ensure you've been added to the Charlie Heroku organization, switch on 2FA and login to heroku with:
 
 ```shell
 heroku login
@@ -88,7 +88,7 @@ That's it.
 
 #### Next Steps
 
-Change into the Charlie repo (just run `charlie`) and follow the instructions in the README to get the app set up, then carry on with your onboarding process!
+Change into the Charlie repo (just run `charlie`) and follow the instructions in the README to get the app set up, then carry on with your onboarding checklist!
 
 ## What does the script do?
 
@@ -104,14 +104,6 @@ Change into the Charlie repo (just run `charlie`) and follow the instructions in
 * Copies the charlie desktop backgrounds to `~/Pictures`.
 * Clears out the macOS dock.
 * Sets Terminal.app to use the _Pro_ theme.
-
-## TODO
-
-* [ ] Actually test it out on a clean/reset laptop.
-* [ ] Do we want to configure a nice vim setup by default (with [a theme, plugin manager and some basic plugins as a minimum](https://github.com/dannysmith/dotfiles/blob/master/vimrc)).
-* [ ] Do we want to standardize on a default shell prompt for better pairing?
-* [ ] Do we want to standardize on Zshell instead of bash?
-* [ ] Check that it's actually idempotent - can we run it twice in a row without errors?
 
 ## Credits
 
