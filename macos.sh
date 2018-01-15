@@ -30,7 +30,7 @@ sudo defaults delete com.apple.loginwindow autoLoginUser
 defaults write com.apple.terminal StringEncodings -array 4
 
 # Set faster Key Repeat
-defaults write -g KeyRepeat -int 0
+defaults write -g KeyRepeat -int 1
 
 # Disable press-and-hold and enable KeyRepeat instead
 defaults write -g ApplePressAndHoldEnabled -bool false
