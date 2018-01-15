@@ -7,6 +7,7 @@ tap 'homebrew/versions'
 tap 'thoughtbot/formulae'
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
+tap 'heroku/brew'
 
 # Settings
 cask_args appdir: '/Applications'
@@ -25,7 +26,6 @@ brew 'doxygen'
 
 # UNIX Tools
 brew 'git'
-brew 'ant'
 brew 'ack'
 brew 'vim'
 brew 'httpie'
@@ -66,7 +66,7 @@ cask 'avira-antivirus'
 
 # Text Editors
 cask 'atom'
-cask 'vscode'
+cask 'visual-studio-code'
 
 # Browsers
 cask 'firefox'
@@ -75,7 +75,7 @@ cask 'google-chrome'
 # Other GUI Apps
 cask 'postman'
 cask 'slack'
-cask 'github-desktop'
+cask 'github'
 cask 'virtualbox'
 cask 'vagrant'
 cask 'macdown'

@@ -9,7 +9,6 @@ homebrew_packages:
   - ffmpeg
   - readline
   - git
-  - ant
   - ack
   - vim
   - httpie
@@ -75,15 +74,13 @@ defaults:
     launchanim: 1
     autohide-delay: 0
   com.apple.Safari:
-    com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled: 1
     ProxiesInBookmarksBar: ()
     IncludeInternalDebugMenu: 1
   com.apple.mail:
     AddressesIncludeNameOnPasteboard: 0
-  com.apple.alf:
+  /Library/Preferences/com.apple.alf:
     globalstate: 1
   com.apple.screensaver:
     idleTime: 240
     askForPassword: 1
     askForPasswordDelay: 0
-
