@@ -9,13 +9,13 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
 # Turn stealth mode on
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
 
-# Furn firewall logging on
+# Turn firewall logging on
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setloggingmode on
 
 # Set screensaver delay to 4 minutes
 defaults write com.apple.screensaver idleTime -int 240
 
-# Require password imediately when waking from screensaver
+# Require password immediately when waking from screensaver
 defaults write com.apple.screensaver askForPassword -bool true
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
