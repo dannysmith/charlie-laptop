@@ -28,6 +28,7 @@ homebrew_packages:
   - postgresql
   - redis
   - sqlite
+  - terminal-parrot
 dotfiles:
   - bash_profile
   - gemrc

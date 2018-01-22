@@ -8,6 +8,7 @@ tap 'thoughtbot/formulae'
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'heroku/brew'
+tap 'jmhobbs/parrot'
 
 # Settings
 cask_args appdir: '/Applications'
@@ -53,6 +54,9 @@ brew 'yarn', args: ['without-node']
 brew 'postgres', restart_service: true
 brew 'redis', restart_service: true
 brew 'sqlite'
+
+# Parrots
+brew 'terminal-parrot'
 
 # Cask QL Plugins
 cask 'qlmarkdown'
